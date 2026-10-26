@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1,viewport-fit=cover"
+        />
+        <title>Merry Christmas, Please Don't Call — Typography Motion</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Playfair+Display:ital,wght@1,700&family=Space+Mono:wght@700&family=Syne:wght@800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main id="app">
+            <div class="lamp"></div>
+            <div id="far"></div>
+            <canvas id="fx"></canvas>
+            <div id="stage"></div>
+            <div id="near"></div>
+            <div class="grain"></div>
+            <div class="vig"></div>
+            <div id="flash"></div>
+            <section id="intro">
+                <p class="k">Bleachers</p>
+                <h1>Merry Christmas,<br />Please Don't Call</h1>
+                <button id="go" class="btn big">▶ Putar</button>
+                <p class="hint">
+                    Taruh musik di <code>audio/song.mp3</code> atau pilih lewat
+                    tombol Musik
+                </p>
+            </section>
+            <nav id="ctl">
+                <button id="pp" class="btn">▶ Putar</button
+                ><button id="rs" class="btn">↺ Ulang</button>
+                <span class="grp btn"
+                    ><button id="dm" aria-label="Delay kurang">−</button
+                    ><output id="dv">0.0s</output
+                    ><button id="dp" aria-label="Delay tambah">+</button></span
+                >
+                <label class="btn" for="mf">♪ Musik</label
+                ><input id="mf" type="file" accept="audio/*" hidden />
+                <button id="fs" class="btn">⛶ Layar penuh</button>
+            </nav>
+            <div id="prog"><i id="bar"></i></div>
+        </main>
+        <audio id="au" preload="auto"></audio>
+        <script src="js/config.js"></script>
+        <script src="js/lyrics.js"></script>
+        <script src="js/objects.js"></script>
+        <script src="js/engine.js"></script>
+    </body>
+</html>
